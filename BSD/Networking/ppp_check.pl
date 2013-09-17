@@ -1,5 +1,5 @@
 #!/usr/bin/perl
-
+#Restarts PPP daemon if connection is lost or daemon is hung
 use Net::Ping;
 #change this
 $server_to_ping="ya.ru";
