@@ -18,7 +18,7 @@ return $host_alive;
 
 if(!check_ping_server($server_to_ping))
     {
-    system("killall ppp");
+    system("killall -9 ppp");
     system("sleep 2");
     # Start PPP ADSL connection
     system("/usr/sbin/ppp -quiet -ddial adsl");
