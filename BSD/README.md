@@ -3,11 +3,11 @@ Sample syntax from scripts in this directory
 ###-- Example Usage --###
 
 
-#-Administration/sysupdate.py-#
+##-Administration/sysupdate.py-##
 
 sysupdate.py accepts no command line arguments
 
-#-Administration/portupdater.sh-#
+##-Administration/portupdater.sh-##
 
 portupdater.sh fetch
 portupdater.sh cron
