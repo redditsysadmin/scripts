@@ -43,8 +43,8 @@ function Get-Uninstall ( [string]$program )
 }
 
 # Example of usage printing attributes for Firefox Uncomment the following lines to see what they return
-#$program = Get-Uninstall "Mozilla Firefox"
+$program = Get-Uninstall $args[0]
 #$program.DisplayName
 #$program.DisplayVersion
 #$program.UninstallString
-#$program
+$program
