@@ -1,8 +1,8 @@
 #! /usr/local/bin/bash
 #
-# Calomel.org 
+# Calomel.org
 #     https://calomel.org/zfs_health_check_script.html
-#     FreeBSD 9.1 ZFS Health Check script 
+#     FreeBSD 9.1 ZFS Health Check script
 #     zfs_health.sh @ Version 0.15
 
 # Check health of ZFS volumes and drives. On any faults send email. In FreeBSD
@@ -27,7 +27,7 @@ fi
 # Capacity - Make sure pool capacities are below 80% for best performance. The
 # percentage really depends on how large your volume is. If you have a 128GB
 # SSD then 80% is reasonable. If you have a 60TB raid-z2 array then you can
-# probably set the warning closer to 95%. 
+# probably set the warning closer to 95%.
 #
 # ZFS uses a copy-on-write scheme. The file system writes new data to
 # sequential free blocks first and when the uberblock has been updated the new
@@ -78,7 +78,7 @@ fi
 # "zpool scrub" command.
 #
 # The scrubExpire variable is in seconds. So for 8 days we calculate 8 days
-# times 24 hours times 3600 seconds to equal 691200 seconds. 
+# times 24 hours times 3600 seconds to equal 691200 seconds.
 
 scrubExpire=691200
 

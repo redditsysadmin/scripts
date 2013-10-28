@@ -1,4 +1,7 @@
 Sample syntax for scripts located in this directory
 
-speedtest_cli.py
-SAMPLE SYNTAX HERE
+###Example Usage
+
+####Networking/speedtest_cli.py
+
+`speedtest_cli.py` accepts no command line arguments
