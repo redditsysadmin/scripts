@@ -6,7 +6,7 @@ date=$(/bin/date)
 echo "
 Updating portaudit first.
 "
-/usr/local/etc/periodic/security/410.portaudit
+/usr/local/etc/periodic/security/410.pkg-audit
 
 echo "
 Portupdater for ${hostname} started at ${date}
@@ -60,7 +60,7 @@ fi
 echo "
 =================== See which ports need updating. ======================
 "
-/usr/sbin/pkg_version -IvL '=' || exit 1
+/usr/sbin/pkg version -IL '=' || exit 1
 
 echo "
 ================= Warnings from /usr/ports/UPDATING. ====================
@@ -71,7 +71,7 @@ if [ ${weekago} -lt ${lastpkg} ]
  then usedate=${weekago}
  else usedate=${lastpkg}
 fi
-/usr/sbin/pkg_updating -d ${usedate}
+/usr/sbin/pkg updating -d ${usedate}
 echo "
 See /usr/ports/UPDATING for further details.
 
