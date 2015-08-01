@@ -1,5 +1,7 @@
 Sample syntax from scripts in this directory.
 
+###Example Usage
+
 ####Administration/puppet-bootstrap
 
 `install.sh` accepts no command line arguments
