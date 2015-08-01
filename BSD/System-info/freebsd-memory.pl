@@ -1,4 +1,4 @@
-#!/usr/bin/perl
+#!/usr/local/bin/perl
 ##
 ##  freebsd-memory -- List Total System Memory Usage
 ##  Copyright (c) 2003-2004 Ralf S. Engelschall <rse@engelschall.com>
