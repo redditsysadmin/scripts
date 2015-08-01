@@ -1,7 +1,8 @@
 #!/usr/bin/perl
-#Restarts PPP daemon if connection is lost or daemon is hung
+# Restarts PPP daemon if connection is lost or daemon is hung.
 use Net::Ping;
-#change this
+
+# Change this.
 $server_to_ping="ya.ru";
 
 
@@ -20,9 +21,11 @@ if(!check_ping_server($server_to_ping))
     {
     system("killall -9 ppp");
     system("sleep 2");
-    # Start PPP ADSL connection
+
+    # Start PPP ADSL connection.
     system("/usr/sbin/ppp -quiet -ddial adsl");
-    # Send the message to
+
+    # Send the message to.
     system("echo PPP restarted by timeout...");
     }
 
