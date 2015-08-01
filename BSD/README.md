@@ -1,4 +1,4 @@
-Sample syntax from scripts in this directory
+Sample syntax from scripts in this directory.
 
 ###Example Usage
 
@@ -22,7 +22,7 @@ Sample syntax from scripts in this directory
 
 ####System-info/freebsd-memory
 
-`freebsd-memory accepts` no command line arguments
+`freebsd-memory` accepts no command line arguments
 
 ####Administration/puppet-bootstrap
 
