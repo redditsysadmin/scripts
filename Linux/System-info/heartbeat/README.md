@@ -16,7 +16,7 @@ if a server is behind a firewall and cannot be pinged, you may install hping3
 sudo apt-get install hping3
 ```
 
-and replace the ping with 
+and replace the ping with
 
 ```bash
 if hping3 -S  $SERVER -p 8011 -c 1 > /dev/null;

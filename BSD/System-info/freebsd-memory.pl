@@ -1,8 +1,8 @@
-#!/usr/bin/perl
+#!/usr/local/bin/perl
 ##
 ##  freebsd-memory -- List Total System Memory Usage
 ##  Copyright (c) 2003-2004 Ralf S. Engelschall <rse@engelschall.com>
-##  
+##
 ##  Redistribution and use in source and binary forms, with or without
 ##  modification, are permitted provided that the following conditions
 ##  are met:
@@ -11,7 +11,7 @@
 ##  2. Redistributions in binary form must reproduce the above copyright
 ##     notice, this list of conditions and the following disclaimer in the
 ##     documentation and/or other materials provided with the distribution.
-##  
+##
 ##  THIS SOFTWARE IS PROVIDED BY AUTHOR AND CONTRIBUTORS ``AS IS'' AND
 ##  ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
 ##  IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
@@ -106,9 +106,9 @@ printf("mem_all:     = %12d (%7dMB) [100%%] %s\n", $mem_all,      $mem_all      
 printf("mem_gap_sys: + %12d (%7dMB)        %s\n",  $mem_gap_sys,  $mem_gap_sys  / (1024*1024), $info->{"mem_gap_sys"});
 printf("-------------- ------------ -----------\n");
 printf("mem_phys:    = %12d (%7dMB)        %s\n",  $mem_phys,     $mem_phys     / (1024*1024), $info->{"mem_phys"});
-printf("mem_gap_hw:  + %12d (%7dMB)        %s\n",  $mem_gap_hw,   $mem_gap_hw   / (1024*1024), $info->{"mem_gap_hw"});     
+printf("mem_gap_hw:  + %12d (%7dMB)        %s\n",  $mem_gap_hw,   $mem_gap_hw   / (1024*1024), $info->{"mem_gap_hw"});
 printf("-------------- ------------ -----------\n");
-printf("mem_hw:      = %12d (%7dMB)        %s\n",  $mem_hw,       $mem_hw       / (1024*1024), $info->{"mem_hw"});     
+printf("mem_hw:      = %12d (%7dMB)        %s\n",  $mem_hw,       $mem_hw       / (1024*1024), $info->{"mem_hw"});
 
 #   print logical results
 printf("\n");
@@ -117,4 +117,3 @@ printf("mem_used:      %12d (%7dMB) [%3d%%] %s\n", $mem_used,  $mem_used  / (102
 printf("mem_avail:   + %12d (%7dMB) [%3d%%] %s\n", $mem_avail, $mem_avail / (1024*1024), ($mem_avail / $mem_total) * 100, $info->{"mem_avail"});
 printf("-------------- ------------ ----------- ------\n");
 printf("mem_total:   = %12d (%7dMB) [100%%] %s\n", $mem_total, $mem_total / (1024*1024), $info->{"mem_total"});
-
