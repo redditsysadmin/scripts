@@ -4,8 +4,8 @@ Sample syntax from scripts in this directory.
 
 ####Administration/puppet-bootstrap
 
-`install.sh` accepts no command line arguments
+`portupdater.sh` accepts no command line arguments
 
 ####System-info/heartbeat
 
-`heartbeat.sh` -s github.com -r 5 -t 555-555-5555
+`sysupdate.py` accepts no command line arguments
