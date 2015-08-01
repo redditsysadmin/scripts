@@ -6,4 +6,4 @@ Sample syntax from scripts in this directory.
 
 ####System-info/heartbeat
 
-`heartbeat.sh -s <server> -r <rate> -t <recipient>
+`heartbeat.sh -s github.com -r 5 -t 555-555-5555
