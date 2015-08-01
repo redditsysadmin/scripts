@@ -6,6 +6,6 @@ Sample syntax from scripts in this directory.
 
 `portupdater.sh` accepts no command line arguments
 
-####System-info/sysupdate
+####Administration/puppet-bootstrap
 
-`sysupdate.py` accepts no command line arguments
+`install.sh` accepts no command line arguments
