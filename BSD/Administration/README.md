@@ -2,10 +2,10 @@ Sample syntax from scripts in this directory.
 
 ###Example Usage
 
-####Administration/puppet-bootstrap
+####Administration/portupdater
 
 `portupdater.sh` accepts no command line arguments
 
-####System-info/heartbeat
+####System-info/sysupdate
 
 `sysupdate.py` accepts no command line arguments
