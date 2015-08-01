@@ -1,5 +1,6 @@
 #!/bin/sh
-#requires ports-mgmt/portmaster and ports-mgmt/portaudit
+
+# Requires ports-mgmt/portmaster and ports-mgmt/portaudit.
 hostname=$(hostname)
 date=$(/bin/date)
 
