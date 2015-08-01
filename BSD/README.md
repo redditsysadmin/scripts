@@ -22,7 +22,7 @@ Sample syntax from scripts in this directory
 
 ####System-info/freebsd-memory
 
-`freebsd-memory accepts` no command line argments
+`freebsd-memory accepts` no command line arguments
 
 ####Administration/puppet-bootstrap
 
