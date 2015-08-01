@@ -22,8 +22,8 @@ Sample syntax from scripts in this directory.
 
 ####System-info/freebsd-memory
 
-`freebsd-memory` accepts no command line arguments
+`freebsd-memory.pl` accepts no command line arguments
 
-####Administration/puppet-bootstrap
+####Administration/puppet-bootstrap/install.sh
 
 `install.sh` accepts no command line arguments
