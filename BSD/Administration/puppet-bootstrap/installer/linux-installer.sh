@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 
 PATH=${PATH}
+source installer/configs/global/install.conf
 
 # Only supporting CentOS 7
 puppet-install() {
@@ -8,12 +9,12 @@ puppet-install() {
 	yum install puppet
 }
 puppet-config() {
-	echo 'PUPPET_SERVER=fbsd-srv02.servebeer.info' >> /etc/sysconfig/puppet
-	cp configs/linux/auth.conf /etc/puppet/auth.conf
-	echo 'server=fbsd-srv02.servebeer.info' >> /etc/puppet/puppet.conf
+	echo 'PUPPET_SERVER=${SERVER}' >> /etc/sysconfig/puppet
+	cp installer/configs/linux/auth.conf /etc/puppet/auth.conf
+	echo 'server=${SERVER}' >> /etc/puppet/puppet.conf
 }
 puppet-cert() {
-	puppet agent -v --server fbsd-srv02.servebeer.info --waitforcert 60 --test
+	puppet agent -v --server ${SERVER} --waitforcert ${TIMEOUT} --test
 }
 puppet-start() {
 	systemctl enable puppet

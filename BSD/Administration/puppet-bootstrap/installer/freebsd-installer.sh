@@ -1,6 +1,7 @@
 #!/usr/bin/env sh
 
 PATH=${PATH}
+source installer/configs/global/install.conf
 
 # Pkgng format only.
 puppet-install() {
@@ -10,12 +11,12 @@ puppet-install() {
 
 puppet-config() {
 	echo 'puppet_enable="YES"' >> /etc/rc.conf
-	echo 'puppet_flags="-v --listen --server fbsd-srv02.servebeer.info"' >> /etc/rc.conf
-	cp configs/freebsd/auth.conf /usr/local/etc/puppet/auth.conf
+	echo 'puppet_flags="-v --listen --server ${SERVER}"' >> /etc/rc.conf
+	cp installer/configs/freebsd/auth.conf /usr/local/etc/puppet/auth.conf
 }
 
 puppet-cert() {
-	puppet agent -v --server fbsd-srv02.servebeer.info --waitforcert 60 --test
+	puppet agent -v --server ${SERVER} --waitforcert ${TIMEOUT} --test
 }
 
 puppet-start() {
