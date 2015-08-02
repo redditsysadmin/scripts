@@ -1,12 +1,7 @@
 # puppet-bootstrap
+Install script for puppet agents, tested on FreeBSD 10.{1,2} and CentOS 7.
 
-A script which configures a server or client machine to be a puppet agent.
-Edit server line information in installer/ to suite your environment.
-
-Dependencies: bash
-
+## Usage
 ```bash
-
 bash install.sh
-
 ```
