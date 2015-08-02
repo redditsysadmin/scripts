@@ -11,7 +11,7 @@ puppet-install() {
 
 puppet-config() {
 	echo 'puppet_enable="YES"' >> /etc/rc.conf
-	echo 'puppet_flags="-v --listen --server ${SERVER}"' >> /etc/rc.conf
+	echo 'puppet_flags="-v --listen --server '${SERVER}'"' >> /etc/rc.conf
 	cp installer/configs/freebsd/auth.conf /usr/local/etc/puppet/auth.conf
 }
 
