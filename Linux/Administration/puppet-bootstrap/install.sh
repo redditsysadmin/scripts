@@ -5,7 +5,7 @@ PATH=${PATH}
 # and puppet.agent allow in installer/configs/$platform/auth.conf
 echo ""
 echo "Make sure you add your clients (puppet agents) to the puppet.master"
-echo "config file, located in ~/etc/puppet/manifests/site.pp"
+echo "config file, located in etc/puppet/manifests/site.pp"
 echo ""
 sleep 10
 
