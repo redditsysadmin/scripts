@@ -1,4 +1,4 @@
-#!/usr/bin/env sh
+#!/usr/bin/env bash
 
 PATH=${PATH}
 source installer/configs/global/install.conf
@@ -16,6 +16,9 @@ puppet-config() {
 }
 
 puppet-cert() {
+	echo ""
+	echo "Check your puppet.master for a pending cert"
+	echo ""
 	puppet agent -v --server ${SERVER} --waitforcert ${TIMEOUT} --test
 }
 
@@ -23,6 +26,7 @@ puppet-start() {
 	service puppet start
 }
 
+# Determine if root is running script.
 if [ "$(id -u)" == "0" ]; then
 
 	puppet-install
